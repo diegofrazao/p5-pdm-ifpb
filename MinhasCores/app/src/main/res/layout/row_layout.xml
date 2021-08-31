@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    android:gravity="center_vertical"
+    android:id="@+id/row_layout">
+
+    <ImageView
+        android:id="@+id/ivAdapterImageColor"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_palette" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10sp">
+        <TextView
+            android:id="@+id/tvAdpaterColorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tvAdpaterColorCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:textSize="15sp"/>
+    </LinearLayout>
+</LinearLayout>

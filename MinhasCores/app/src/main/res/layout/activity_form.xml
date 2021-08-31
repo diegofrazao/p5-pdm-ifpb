@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:textSize="50sp"
+        android:text="Color"
+        android:gravity="center"
+        android:background="@color/primaryColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/etFormColorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Color Name"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Red"/>
+            <SeekBar
+                android:id="@+id/sbFormRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Green"/>
+            <SeekBar
+                android:id="@+id/sbFormGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="Blue"/>
+            <SeekBar
+                android:id="@+id/sbFormBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:min="0"
+                android:max="255"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btFormCode"
+            android:layout_width="120sp"
+            android:layout_height="100sp"
+            android:text="#000000"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20sp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+        <Button
+            android:id="@+id/btFormSave"
+            android:text="Save"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5sp"/>
+        <Button
+            android:id="@+id/btFormCancel"
+            android:text="Cancel"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"/>
+    </LinearLayout>
+</LinearLayout>

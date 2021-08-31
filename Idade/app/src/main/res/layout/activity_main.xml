@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="QUANTOS ANOS VOCÊ TEM?!"
+        android:gravity="center"
+        android:textSize="28sp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="top|center">
+        <EditText
+            android:id="@+id/etMainNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe seu nome"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:gravity="center">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="top|center">
+        <EditText
+            android:id="@+id/etMainAno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Informe o ano que nasceu"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:gravity="center">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="top|center">
+        <Button
+            android:id="@+id/btMainCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULAR"
+            android:backgroundTint="@color/black">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
